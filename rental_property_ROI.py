@@ -3,11 +3,11 @@ def clear():
     return os.system('cls' if os.name == 'nt' else 'clear')
 
 class ROI:
-    def __init__(self, income = 0, expenses = 0, investment = 0, cash_flow = 0):
-        self.income = income
-        self.expenses = expenses
-        self.investment = investment
-        self.cash_flow = cash_flow
+    def __init__(self):
+        self.income = 0
+        self.expenses = 0
+        self.investment = 0
+        self.cash_flow = 0
 
     def make_int(self, num):
         num = num.strip('$ ').replace(',', '')
